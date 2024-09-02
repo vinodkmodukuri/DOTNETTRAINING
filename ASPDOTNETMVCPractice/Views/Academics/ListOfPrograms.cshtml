@@ -1,0 +1,42 @@
+﻿
+@model  ASPDOTNETMVCPractice.Models.Programs
+
+@*
+@{
+    ViewBag.Title = "ListOfPrograms";
+}*@
+
+@*
+@{ 
+    ASPDOTNETMVCPractice.Models.Programs myobj = (ASPDOTNETMVCPractice.Models.Programs)
+        ViewData["AcademicPrograms"];
+}
+
+<h2>List of Programs</h2>
+<p> 
+    Program 1: @myobj.Program1 <br />
+    Program 2: @myobj.Program2 <br />
+    Program 3: @myobj.Program3 <br />
+
+</p>*@
+
+@*@{ 
+    ASPDOTNETMVCPractice.Models.Programs myobj = ViewBag.Programs;
+}
+
+<p>
+    Program 1: @myobj.Program1 <br />
+    Program 2: @myobj.Program2 <br />
+    Program 3: @myobj.Program3 <br />
+
+</p>
+
+*@
+
+<h1> List of Products</h1>
+
+<p>
+    Program 1: @Model.Program1 <br />
+    Program 2: @Model.Program2 <br />
+    Program 3: @Model.Program3 <br />
+</p>

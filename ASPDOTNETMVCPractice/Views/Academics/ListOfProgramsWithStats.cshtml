@@ -1,0 +1,20 @@
+﻿@model ASPDOTNETMVCPractice.Models.ProgramsStatsViewModel
+
+
+<h2>List Of Programs with Stats</h2>
+<p>
+    <b>Title :</b> @Model.Title, <br />
+    <b> Description: </b> @Model.Description <br />
+    <br />
+    Program 1: <b> @Model.ListOfPrograms.Program1 <br /> </b>
+    Program 2:<b> @Model.ListOfPrograms.Program2 <br /> </b>
+    Program 3: <b> @Model.ListOfPrograms.Program3 <br /> </b>
+</p>
+
+<p>
+    AcademicPrograms: <b> @Model.ListOfStats.AcademicPrograms <br /> </b>
+    StudentOrganizations: <b> @Model.ListOfStats.StudentOrganizations <br /> </b>
+    StudyAbroadCities: <b>  @Model.ListOfStats.StudyAbroadCities <br /> </b>
+    CountriesRepresented = <b> @Model.ListOfStats.CountriesRepresented <br /> </b>
+
+</p>

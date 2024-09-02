@@ -1,0 +1,49 @@
+﻿@*Strongly typed view *@
+
+@model ASPDOTNETMVC.Models.Product 
+
+@{
+    ViewBag.Title = "ListOfProducts";
+}
+@*@{
+        //ASPDOTNETMVC.Models.Product ProductObject = (ASPDOTNETMVC.Models.Product)ViewData["myproducts"];
+
+    }*@
+
+@*<h2>ListOfProducts</h2>
+    <h1> Product details</h1>
+    <p>
+        Product ID: @ProductObject.ProductID <br />
+        Product Name: @ProductObject.ProductName <br />
+        Product Description: @ProductObject.ProductDescription
+
+    </p>*@
+
+@*@{
+        ASPDOTNETMVC.Models.Product ProductObject = ViewBag.ViewProducts;
+
+
+
+    }
+
+    <h1> List of Products</h1>
+    <p>
+        Product ID: @ProductObject.ProductID <br />
+        Product Name: @ProductObject.ProductName <br />
+        Product Description: @ProductObject.ProductDescription
+
+    </p> *@
+
+
+<h1> List of Products</h1>
+<p>
+    Product ID: @Model.ProductID <br />
+    Product Name: @Model.ProductName <br />
+    Product Description: @Model.ProductDescription
+
+</p>
+
+
+
+
+

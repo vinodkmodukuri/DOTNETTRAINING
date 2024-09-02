@@ -1,0 +1,19 @@
+﻿@model ASPDOTNETMVC.Models.ProdServicesViewModel
+@{
+    ViewBag.Title = "DisplayProdService";
+}
+
+<h2>DisplayProdService</h2>
+
+<p> @Model.Title </p>
+<p> @Model.Message</p>
+<p>
+    Product ID:@Model.ProductPPName.ProductID <br />
+    Product Name:@Model.ProductPPName.ProductName <br />
+    Product Description:@Model.ProductPPName.ProductDescription <br />
+
+    Oil Change :@Model.ServicesPPName.OilChnage <br />
+    Car Wash : @Model.ServicesPPName.OilChnage <br />
+    Engine Check : @Model.ServicesPPName.EngineCheck <br />
+</p>
+

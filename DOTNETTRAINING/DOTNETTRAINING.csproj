@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA9F3531-1C9E-4421-BD89-85D952E02287}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DOTNETTRAINING</RootNamespace>
+    <AssemblyName>DOTNETTRAINING</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Program1.SqlConnectionAskUserINput</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C#\Day 1\DotnetIntroduction.cs" />
+    <Compile Include="C#\Day 2\Day2Notes.cs" />
+    <Compile Include="C#\Day 2\HellowWorld.cs" />
+    <Compile Include="C#\Day 2\Welcome.cs" />
+    <Compile Include="C#\Day 3\DataTypes.cs" />
+    <Compile Include="C#\Day 3\Day3Notes.cs" />
+    <Compile Include="C#\Day 3\EscapeSequences.cs" />
+    <Compile Include="C#\Day 4\AcceptInputFromUserAndDisplay.cs" />
+    <Compile Include="C#\Day 4\AcceptStudentDataDisplay.cs" />
+    <Compile Include="C#\Day 4\Day4Notes.cs" />
+    <Compile Include="C#\Day 4\DisplayUserInput.cs" />
+    <Compile Include="C#\Day 4\StudentTotalMarks.cs" />
+    <Compile Include="C#\Day 5\ArithmeticOperators.cs" />
+    <Compile Include="C#\Day 5\Day5Notes.cs" />
+    <Compile Include="C#\Day 6\ArithmeticAssignementOperators.cs" />
+    <Compile Include="C#\Day 6\ArithmeticOperationsCalculatorApp.cs" />
+    <Compile Include="C#\Day 6\ComparisonOperators.cs" />
+    <Compile Include="C#\Day 6\EvenOrOdd.cs" />
+    <Compile Include="C#\Day 6\LogicalOperators.cs" />
+    <Compile Include="C#\Day 6\PositiveOrNegative.cs" />
+    <Compile Include="C#\Day 6\UniaryOperators.cs" />
+    <Compile Include="C#\Day 7\ArithmeticOperationsUsingSwitch.cs" />
+    <Compile Include="C#\Day 7\Day7Notes.cs" />
+    <Compile Include="C#\Day 7\FindGreatestNumberIfElse.cs" />
+    <Compile Include="C#\Day 7\StudentResults.cs" />
+    <Compile Include="C#\Day 7\SwitchCaseDayOfAWeek.cs" />
+    <Compile Include="C#\Day 7\VoteEligibilityVerification.cs" />
+    <Compile Include="C#\Day 7\VowelOrNot.cs" />
+    <Compile Include="C#\Day 8\Day8Notes.cs" />
+    <Compile Include="C#\Day 8\DoWhileDisplayParticularMultiplicationTable.cs" />
+    <Compile Include="C#\Day 8\DoWhileDisplaySumOfDigitsCube.cs" />
+    <Compile Include="C#\Day 8\DoWhileDisplaySumOfDigitsCubeArmstrong.cs" />
+    <Compile Include="C#\Day 8\DoWhileDisplaySumOfDigitsSquare.cs" />
+    <Compile Include="C#\Day 8\DoWhileDisplaySumOfTheDigits.cs" />
+    <Compile Include="C#\Day 8\FindGreatestNumber.cs" />
+    <Compile Include="C#\Day 8\FindoutLeapYear.cs" />
+    <Compile Include="C#\Day 8\ForLoopDisplay10To20Numbers.cs" />
+    <Compile Include="C#\Day 8\ForLoopDisplay1to100PrimeNumbers.cs" />
+    <Compile Include="C#\Day 8\ForLoopDisplayEvenNumbers1To100.cs" />
+    <Compile Include="C#\Day 8\ForLoopDisplayTheFactorial.cs" />
+    <Compile Include="C#\Day 8\ForLoopFibonocciSeries.cs" />
+    <Compile Include="C#\Day 8\TemperatureCheck.cs" />
+    <Compile Include="C#\Day 8\WhileLoopDisplay1To10Numbers.cs" />
+    <Compile Include="C#\Day 8\WhileLoopDisplayFirst10EvenNumbers.cs" />
+    <Compile Include="C#\Day 8\WhileLoopDisplayFirst10OddNumbers.cs" />
+    <Compile Include="C#\Day 8\WhileLoopDisplaySumOfFirst10EvenNumbers.cs" />
+    <Compile Include="C#\Day 8\WhileLoopDisplaySumOfFirst10Numbers.cs" />
+    <Compile Include="C#\Day 8\WhileLoopDisplaySumOfFirst10OddNumbers.cs" />
+    <Compile Include="C#\Day 9\Arrays1D.cs" />
+    <Compile Include="C#\Day 9\Arrays1DAcceptArraySize.cs" />
+    <Compile Include="C#\Day 9\Arrays1DAskUser.cs" />
+    <Compile Include="C#\Day 9\Arrays2DAcceptArraySize.cs" />
+    <Compile Include="C#\Day 9\Arrays2DAcceptCustomArraySize.cs" />
+    <Compile Include="C#\Day 9\Arrays2DAcceptCustomArraySizeTwoMatrices.cs" />
+    <Compile Include="C#\Day 9\Arrays2DAcceptCustomArraySizeTwoMatricesAddition.cs" />
+    <Compile Include="C#\Day 9\Arrays2DAcceptCustomArraySizeTwoMatricesMultiplication.cs" />
+    <Compile Include="C#\Day 9\Arrays2DArraySize2by2.cs" />
+    <Compile Include="C#\Day 9\Arrays2DArraySize3by3.cs" />
+    <Compile Include="C#\Day 9\Arrays2DAskUser.cs" />
+    <Compile Include="C#\Day 9\Arrays2DAskUserArraySize5.cs" />
+    <Compile Include="C#\Day 9\Day9Notes.cs" />
+    <Compile Include="C#\Day10\AccessSpecifierInternal.cs" />
+    <Compile Include="C#\Day10\AccessSpecifierPrivate.cs" />
+    <Compile Include="C#\Day10\AccessSpecifierProtected.cs" />
+    <Compile Include="C#\Day10\AccessSpecifierProtectedInternal.cs" />
+    <Compile Include="C#\Day10\AccessSpecifierPublic.cs" />
+    <Compile Include="C#\Day10\Day10Notes.cs" />
+    <Compile Include="C#\Day11\Day11Notes.cs" />
+    <Compile Include="C#\Day11\Method1NoReturnNoParameters.cs" />
+    <Compile Include="C#\Day11\Method2NoReturnWithParameters.cs" />
+    <Compile Include="C#\Day11\Method3WithReturnNoParameters.cs" />
+    <Compile Include="C#\Day11\Method4WithReturnwithParameters.cs" />
+    <Compile Include="C#\Day11\Method5ValueParameters.cs" />
+    <Compile Include="C#\Day11\Method6ReferenceParameters.cs" />
+    <Compile Include="C#\Day11\Method7OutParameter.cs" />
+    <Compile Include="C#\Day11\MethodWithParametersByReference.cs" />
+    <Compile Include="C#\Day11\MethodWithParametersByValue.cs" />
+    <Compile Include="C#\Day11\NonStaticMethodAddition.cs" />
+    <Compile Include="C#\Day11\StaticFunctions.cs" />
+    <Compile Include="C#\Day11\StaticMethodAddition.cs" />
+    <Compile Include="C#\Day11\StaticVariable.cs" />
+    <Compile Include="C#\Day12\Enum.cs" />
+    <Compile Include="C#\Day12\OneDAsParameter.cs" />
+    <Compile Include="C#\Day12\ParamsArray.cs" />
+    <Compile Include="C#\Day12\Structures.cs" />
+    <Compile Include="C#\Day12\TwoDAsParameters.cs" />
+    <Compile Include="C#\Day13\ArrayListDemo.cs" />
+    <Compile Include="C#\Day13\BoxingUnboxing.cs" />
+    <Compile Include="C#\Day13\QueueDemo.cs" />
+    <Compile Include="C#\Day13\StackDemo.cs" />
+    <Compile Include="C#\Day14\Day14Notes.cs" />
+    <Compile Include="C#\Day14\DictionaryGeneric.cs" />
+    <Compile Include="C#\Day14\GenericList.cs" />
+    <Compile Include="C#\Day14\GenericMethod.cs" />
+    <Compile Include="C#\Day14\GenericResult.cs" />
+    <Compile Include="C#\Day14\HashTableDemo.cs" />
+    <Compile Include="C#\Day15\ConstructorAndDestructor.cs" />
+    <Compile Include="C#\Day15\ConstructorDemo.cs" />
+    <Compile Include="C#\Day15\DestructorDemo.cs" />
+    <Compile Include="C#\Day15\ParameterizedConstructorDemo.cs" />
+    <Compile Include="C#\Day16\FunctionOverloading.cs" />
+    <Compile Include="C#\Day16\OperatorOverloading.cs" />
+    <Compile Include="C#\Day16\OperatorOverloadingMatrix.cs" />
+    <Compile Include="C#\Day16\RationalNumbers.cs" />
+    <Compile Include="C#\Day17\Day17Notes.cs" />
+    <Compile Include="C#\Day17\HierarchicalInheritance.cs" />
+    <Compile Include="C#\Day17\MultiLevelInheritance.cs" />
+    <Compile Include="C#\Day17\MultiLevelInheritancePerson.cs" />
+    <Compile Include="C#\Day17\MultiLevelInheritanceVehicle1.cs" />
+    <Compile Include="C#\Day17\SingleInheritanceFurniture.cs" />
+    <Compile Include="C#\Day17\SingleInheritanceUniversity.cs" />
+    <Compile Include="C#\Day17\SingleInheritanceVehicle.cs" />
+    <Compile Include="C#\Day18\AbstractClass.cs" />
+    <Compile Include="C#\Day18\AbstractClassDocument.cs" />
+    <Compile Include="C#\Day18\AbstractClassGovernmentOfficial.cs" />
+    <Compile Include="C#\Day18\AbstractClassPaymentMethod.cs" />
+    <Compile Include="C#\Day18\Day18Notes.cs" />
+    <Compile Include="C#\Day18\VirtualFunctions.cs" />
+    <Compile Include="C#\Day18\VirtualFunctionsAnimal.cs" />
+    <Compile Include="C#\Day18\VirtualFunctionsDocument.cs" />
+    <Compile Include="C#\Day19\Day19Notes.cs" />
+    <Compile Include="C#\Day19\InterfaceDemo.cs" />
+    <Compile Include="C#\Day19\SealedClass.cs" />
+    <Compile Include="C#\Day19\SealedClassPrinter.cs" />
+    <Compile Include="C#\Day19\SealedMethod.cs" />
+    <Compile Include="C#\Day20\Day20Notes.cs" />
+    <Compile Include="C#\Day20\ExceptionHaldling.cs" />
+    <Compile Include="C#\Day20\ExceptionHandlingVoteVerification.cs" />
+    <Compile Include="C#\Day21\Day21Notes.cs" />
+    <Compile Include="C#\Day21\DelegateDemo.cs" />
+    <Compile Include="C#\Day21\DelegateEmpDemo.cs" />
+    <Compile Include="C#\Day21\DelegateGreetingWithoutParameters.cs" />
+    <Compile Include="C#\Day21\DelegateWithStringParameter.cs" />
+    <Compile Include="C#\Day21\DelegateWithTwoParameters.cs" />
+    <Compile Include="C#\Day21\FileHandlingAskUserIinput.cs" />
+    <Compile Include="C#\Day21\FileHandlingCarServiceDemo.cs" />
+    <Compile Include="C#\Day21\FileHandlingReadIndex.cs" />
+    <Compile Include="C#\Day21\FileHandlingReadUserInputIndex.cs" />
+    <Compile Include="C#\Day21\FileHandlingWriteTextWithStreamWriter.cs" />
+    <Compile Include="C#\Day21\FileStreamReadWrite.cs" />
+    <Compile Include="C#\Day21\Multicastdelegate.cs" />
+    <Compile Include="C#\Day22\LinqDemoClass.cs" />
+    <Compile Include="C#\Day22\LinqDemoIntArray.cs" />
+    <Compile Include="C#\Day22\LinqDemoStringArray.cs" />
+    <Compile Include="C#\Day23 &amp; Day24\ADODemo.cs" />
+    <Compile Include="C#\Day23 &amp; Day24\AdoDemoAutoMobileStore.cs" />
+    <Compile Include="C#\Day23 &amp; Day24\SqlConnectionAskUserINput.cs" />
+    <Compile Include="C#\Day23 &amp; Day24\SqlConnectionDisconnectedEnv.cs" />
+    <Compile Include="C#\Day23 &amp; Day24\SqlConnectionInsertDemo.cs" />
+    <Compile Include="C#\Day23 &amp; Day24\SqlConnectionInsertDemoGlobalConnection.cs" />
+    <Compile Include="C#\Day23 &amp; Day24\SqlConnectionReadDemo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
